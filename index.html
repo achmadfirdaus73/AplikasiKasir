@@ -3,32 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kasir Pro - Point of Sale (Vue & Tailwind)</title>
-    
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css" rel="stylesheet">
+    <title>Aplikasi Kasir Pro</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/plugin/localizedFormat.js"></script>
-    <script>dayjs.extend(dayjs_plugin_localizedFormat);</script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body class="bg-gray-100">
     
-    <div id="app"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
+    
+    <link rel="stylesheet" href="style.css">
 
-    <script type="module" src="app.js">
-        
-    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
 
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <script src="https://unpkg.com/dayjs@1.11.10/dayjs.min.js"></script>
+    <script src="https://unpkg.com/dayjs@1.11.10/plugin/localeData"></script>
+    <script src="https://unpkg.com/dayjs@1.11.10/plugin/isSameOrBefore"></script>
+    <script src="https://unpkg.com/dayjs@1.11.10/plugin/isSameOrAfter"></script>
+    <script src="https://unpkg.com/dayjs@1.11.10/locale/id"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-100">
+    <div id="root"></div>
+
+    <script type="text/babel" src="main.js"></script>
 </body>
 </html>
